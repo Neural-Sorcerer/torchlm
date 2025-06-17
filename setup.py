@@ -8,7 +8,7 @@ PATH_ROOT = Path(__file__).parent.resolve()
 def get_long_description():
     description = (PATH_ROOT / "README.md").read_text(encoding="utf-8")
     # replace relative repository path to absolute link to the release
-    static_url = f"https://github.com/DefTruth/torchlm/blob/main"
+    static_url = f"https://github.com/xlite-dev/torchlm/blob/main"
     description = description.replace("docs/res/", f"{static_url}/docs/res/")
     return description
 
@@ -23,7 +23,7 @@ setuptools.setup(
                 "with albumentations and torchvision.",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
-    url="https://github.com/DefTruth/torchlm",
+    url="https://github.com/xlite-dev/torchlm",
     packages=setuptools.find_packages(),
     install_requires=[
         "opencv-python>=4.3.0",
